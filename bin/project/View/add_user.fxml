@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="233.0" minWidth="380.0" prefHeight="280.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Control.add_user">
+   <children>
+      <TextField fx:id="textFIO" layoutX="45.0" layoutY="34.0" prefHeight="25.0" prefWidth="290.0" promptText="ФИО" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="45.0" />
+      <ChoiceBox fx:id="choosePosition" layoutX="45.0" layoutY="71.0" prefHeight="25.0" prefWidth="290.0" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="45.0" />
+      <TextField fx:id="textLogin" layoutX="45.0" layoutY="109.0" prefHeight="25.0" prefWidth="290.0" promptText="Логин" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="45.0" />
+      <PasswordField fx:id="textPassword" layoutX="45.0" layoutY="149.0" prefHeight="25.0" prefWidth="290.0" promptText="Пароль" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="45.0" />
+      <PasswordField fx:id="textRePassword" layoutX="45.0" layoutY="190.0" prefHeight="25.0" prefWidth="290.0" promptText="Повторите пароль" />
+      <Button defaultButton="true" layoutX="45.0" layoutY="231.0" mnemonicParsing="false" onAction="#onRegistr" prefHeight="27.0" prefWidth="142.0" text="Зарегистрироваться" AnchorPane.leftAnchor="45.0" />
+      <Button cancelButton="true" layoutX="190.0" layoutY="231.0" mnemonicParsing="false" onAction="#onCancel" prefHeight="27.0" prefWidth="142.0" text="Отмена" AnchorPane.rightAnchor="45.0" />
+   </children>
+</AnchorPane>

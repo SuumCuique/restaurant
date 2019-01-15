@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Control.admin">
+  <tabs>
+    <Tab text="Список официантов">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="textFIO" layoutX="46.0" layoutY="26.0" prefHeight="25.0" prefWidth="270.0" promptText="ФИО работника" AnchorPane.leftAnchor="10.0" />
+                  <ChoiceBox fx:id="choiceCook" layoutX="46.0" layoutY="70.0" prefHeight="25.0" prefWidth="270.0" AnchorPane.leftAnchor="10.0" />
+                  <Button defaultButton="true" layoutX="40.0" layoutY="119.0" mnemonicParsing="false" onAction="#onAddSteward" prefHeight="25.0" prefWidth="270.0" text="Добавить официанта" AnchorPane.leftAnchor="10.0" />
+                  <Button layoutX="10.0" layoutY="161.0" mnemonicParsing="false" onAction="#onDelSteward" prefHeight="25.0" prefWidth="270.0" text="Удалить официанта" AnchorPane.leftAnchor="10.0" />
+                  <TableView fx:id="tableSteward" layoutX="372.0" layoutY="51.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Список продуктов">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="textProductsName" layoutX="10.0" layoutY="26.0" prefHeight="25.0" prefWidth="270.0" promptText="Название" AnchorPane.leftAnchor="10.0" />
+                  <TextField fx:id="textProductsCount" layoutX="10.0" layoutY="104.0" prefHeight="25.0" prefWidth="270.0" promptText="Количество" AnchorPane.leftAnchor="10.0" />
+                  <TextField fx:id="textProductsInfo" layoutX="10.0" layoutY="144.0" prefHeight="25.0" prefWidth="270.0" promptText="Описание" AnchorPane.leftAnchor="10.0" />
+                  <Button defaultButton="true" layoutX="10.0" layoutY="186.0" mnemonicParsing="false" onAction="#onAddProducts" prefHeight="25.0" prefWidth="270.0" text="Добавить продукт" AnchorPane.leftAnchor="10.0" />
+                  <Button layoutX="10.0" layoutY="223.0" mnemonicParsing="false" onAction="#onDelProducts" prefHeight="25.0" prefWidth="270.0" text="Удалить продукт" AnchorPane.leftAnchor="10.0" />
+                  <TableView fx:id="tableProducts" layoutX="315.0" layoutY="40.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Список блюд">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="textDishName" layoutX="10.0" layoutY="30.0" prefHeight="25.0" prefWidth="270.0" promptText="Название" AnchorPane.leftAnchor="10.0" />
+                  <TextField fx:id="textDishSize" layoutX="10.0" layoutY="66.0" prefHeight="25.0" prefWidth="270.0" promptText="Размеры" AnchorPane.leftAnchor="10.0" />
+                  <TextField fx:id="textDishInfo" layoutX="10.0" layoutY="100.0" prefHeight="25.0" prefWidth="270.0" promptText="Описание" AnchorPane.leftAnchor="10.0" />
+                  <TextField fx:id="textDishCount" layoutX="10.0" layoutY="134.0" prefHeight="25.0" prefWidth="270.0" promptText="Количество" />
+                  <Button defaultButton="true" layoutX="10.0" layoutY="204.0" mnemonicParsing="false" onAction="#onAddDish" prefHeight="25.0" prefWidth="270.0" text="Добавить блюдо" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="200.0" />
+                  <Button layoutX="10.0" layoutY="241.0" mnemonicParsing="false" onAction="#onDelDish" prefHeight="25.0" prefWidth="270.0" text="Удалить блюдо" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="240.0" />
+                  <TableView fx:id="tableDish" layoutX="331.0" layoutY="47.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+               </children></AnchorPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>
