@@ -39,7 +39,7 @@
                         </AnchorPane>
                         <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
                            <children>
-                              <Button layoutX="10.0" layoutY="7.0" mnemonicParsing="false" onAction="#onReject" text="Отвергнуть изделие" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                              <Button layoutX="10.0" layoutY="7.0" mnemonicParsing="false" onAction="#onReject" text="Отвергнуть блюдо" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
                            </children>
                         </AnchorPane>
                      </children>
@@ -47,7 +47,7 @@
                </children>
             </GridPane>
          </content></Tab>
-    <Tab text="Редактирование изделия">
+    <Tab text="Редактирование блюда">
          <content>
             <GridPane>
               <columnConstraints>
@@ -71,7 +71,7 @@
                         <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
                            <children>
                               <TableView fx:id="tableProductRedact" layoutX="50.0" layoutY="93.0" prefHeight="311.0" prefWidth="280.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
-                              <Button layoutX="10.0" layoutY="332.0" mnemonicParsing="false" onAction="#onChoose" prefHeight="25.0" prefWidth="279.0" text="Выбрать изделие" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                              <Button layoutX="10.0" layoutY="332.0" mnemonicParsing="false" onAction="#onChoose" prefHeight="25.0" prefWidth="279.0" text="Выбрать блюдо" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
                            </children>
                         </AnchorPane>
                         <GridPane>
@@ -90,8 +90,8 @@
                               </AnchorPane>
                               <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
                                  <children>
-                                    <TableView fx:id="tableDetailInProduct" layoutX="22.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
-                                    <Button defaultButton="true" layoutX="10.0" layoutY="146.0" mnemonicParsing="false" onAction="#onReady" prefHeight="25.0" prefWidth="279.0" text="Принять изделие" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                                    <TableView fx:id="tableProductsInDish" layoutX="22.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                                    <Button defaultButton="true" layoutX="10.0" layoutY="146.0" mnemonicParsing="false" onAction="#onReady" prefHeight="25.0" prefWidth="279.0" text="Принять блюдо" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
                                  </children>
                               </AnchorPane>
                            </children>
@@ -116,12 +116,12 @@
                                  <children>
                                     <AnchorPane prefHeight="200.0" prefWidth="200.0">
                                        <children>
-                                          <Button mnemonicParsing="false" onAction="#onAdd" prefHeight="25.0" prefWidth="90.0" text="Добавить деталь" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+                                          <Button mnemonicParsing="false" onAction="#onAdd" prefHeight="25.0" prefWidth="90.0" text="Добавить продукт" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
                                        </children>
                                     </AnchorPane>
                                     <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
                                        <children>
-                                          <Button mnemonicParsing="false" onAction="#onDel" prefHeight="25.0" prefWidth="90.0" text="Удалить деталь" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+                                          <Button mnemonicParsing="false" onAction="#onDel" prefHeight="25.0" prefWidth="90.0" text="Удалить продукт" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
                                        </children>
                                     </AnchorPane>
                                  </children>
@@ -146,7 +146,7 @@
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <Label text="Изделие:">
+                        <Label text="Блюдо:">
                            <GridPane.margin>
                               <Insets bottom="20.0" left="50.0" right="20.0" top="20.0" />
                            </GridPane.margin>
